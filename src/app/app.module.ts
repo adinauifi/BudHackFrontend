@@ -8,6 +8,13 @@ import { CereriComponent } from './components/cereri/cereri.component';
 import { TaxeImpoziteComponent } from './components/taxe-impozite/taxe-impozite.component';
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { CTPComponent } from './components/ctp/ctp.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatButtonModule } from '@angular/material/button';
+import { CreeazaCerereNouaComponent } from './components/cereri/creeaza-cerere-noua/creeaza-cerere-noua.component';
+import { IstoricCereriComponent } from './components/cereri/istoric-cereri/istoric-cereri.component';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatSelectModule } from '@angular/material/select';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 @NgModule({
   declarations: [
@@ -16,11 +23,18 @@ import { CTPComponent } from './components/ctp/ctp.component';
     CereriComponent,
     TaxeImpoziteComponent,
     HomePageComponent,
-    CTPComponent
+    CTPComponent,
+    CreeazaCerereNouaComponent,
+    IstoricCereriComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatExpansionModule,
+    MatSelectModule,
+    MatCheckboxModule
   ],
   providers: [],
   bootstrap: [AppComponent]
