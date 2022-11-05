@@ -15,6 +15,7 @@ import { MatSelectModule } from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import { CerereDetailsComponent } from './components/cereri/cerere-details/cerere-details.component';
 import {MatCardModule} from '@angular/material/card';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {MatCardModule} from '@angular/material/card';
     MatExpansionModule,
     MatSelectModule,
     MatCheckboxModule,
-    MatCardModule
+    MatCardModule, 
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]

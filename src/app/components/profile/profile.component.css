@@ -1,0 +1,33 @@
+.profile-data{
+    margin-top:30px;
+    background-color: aliceblue;
+    display: flex;
+    height: 170px;
+    align-items: center;
+}
+
+.profile-picture{
+    width: 35%;
+   
+}
+
+.name{
+    font-size:xx-large;
+}
+
+img{
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.profil-document{
+    padding: 10px 0px 10px 10px;
+    margin-bottom: 2px;
+    background-color: aliceblue;
+    color: black;
+    font-weight: 100;
+    font-size: medium;}
+
+::ng-host mat-label{
+    color:white;
+}

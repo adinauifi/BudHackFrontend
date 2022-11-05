@@ -1,1 +1,72 @@
 <p>profile works!</p>
+
+<div class="profile-data">
+    <div class="profile-picture">
+        <img src = "../../../assets/149071.png">
+    </div>
+    <div class="name">ION POPESCU</div>
+</div>
+<div class="profile-info">
+
+</div>
+<br />
+<br />
+<br />
+<div>
+  <mat-accordion>
+    <mat-expansion-panel [expanded]="false" hideToggle="true">
+        <mat-expansion-panel-header>
+            <mat-panel-title> Date Personale </mat-panel-title>
+        </mat-expansion-panel-header>
+
+        <mat-form-field appearance="fill">
+            <input matInput disabled value="Popescu">
+        </mat-form-field>     
+        <mat-form-field>
+            <input matInput disabled value="Ion">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput disabled value="2980209123456">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput disabled value="CJ000111">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput disabled value="popescuIon@gmail.com">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput disabled value="0757444666">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput disabled value="Cluj-Napoca">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput disabled value="str. Zambilelor">
+        </mat-form-field>
+        <mat-form-field>
+            <input matInput disabled value="nr. 5">
+        </mat-form-field>
+    </mat-expansion-panel>
+    <mat-expansion-panel>
+        <mat-expansion-panel-header>
+            Documentele mele
+        </mat-expansion-panel-header>
+        <div class="profil-document" (click)="openFile('help.pdf')">
+            Copie dupa carte de identitate
+        </div>
+        <div class="profil-document" (click)="openFile('help.pdf')">
+            Copie dupa certificat de nastere
+        </div>
+        <div class="profil-document" (click)="openFile('help.pdf')">
+            Copie dupa starea civila
+        </div>
+        <div class="profil-document" (click)="browseFile()">
+            + ADAUGA
+        </div>
+    </mat-expansion-panel>
+  </mat-accordion>
+</div>
+
+<br/>
+<br/>
+<br/>
