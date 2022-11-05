@@ -12,4 +12,11 @@ export class ProfileComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  openFile(fileName: string) {
+    window.open("assets/" + fileName);
+  }
+
+  browseFile(){
+    
+  }
 }

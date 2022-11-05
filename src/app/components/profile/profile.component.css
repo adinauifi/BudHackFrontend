@@ -19,3 +19,15 @@ img{
     max-height: 100%;
     max-width: 100%;
 }
+
+.profil-document{
+    padding: 10px 0px 10px 10px;
+    margin-bottom: 2px;
+    background-color: aliceblue;
+    color: black;
+    font-weight: 100;
+    font-size: medium;}
+
+::ng-host mat-label{
+    color:white;
+}

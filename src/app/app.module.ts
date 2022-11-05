@@ -15,6 +15,7 @@ import { IstoricCereriComponent } from './components/cereri/istoric-cereri/istor
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatSelectModule } from '@angular/material/select';
 import {MatCheckboxModule} from '@angular/material/checkbox';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
     MatButtonModule,
     MatExpansionModule,
     MatSelectModule,
-    MatCheckboxModule
+    MatCheckboxModule, 
+    MatFormFieldModule
   ],
   providers: [],
   bootstrap: [AppComponent]
