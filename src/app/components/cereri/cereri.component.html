@@ -61,7 +61,10 @@
       <p>Content istoric cereri</p>
       <div *ngFor="let cerere of cereri">
         <mat-card>
-            {{cerere.name}}
+            <mat-card-title>
+                {{cerere.name}}
+            </mat-card-title>
+            
         </mat-card>
         
       </div>
