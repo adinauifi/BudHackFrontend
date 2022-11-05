@@ -17,8 +17,8 @@
       <mat-form-field appearance="fill">
         <mat-label>Alege cererea pe care vrei sa o depui</mat-label>
         <mat-select>
-          <mat-option *ngFor="let food of foods" [value]="food.value">
-            {{food.viewValue}}
+          <mat-option *ngFor="let cerere of cereriCategorii" [value]="cerere.value">
+            {{cerere.viewValue}}
           </mat-option>
         </mat-select>
       </mat-form-field>
@@ -28,12 +28,26 @@
             Documente
         </mat-expansion-panel-header>
 
-        <mat-checkbox class="width-100">Document 1</mat-checkbox>
-        <mat-checkbox class="width-100">Document 2</mat-checkbox>
-        <mat-checkbox class="width-100">Document 3</mat-checkbox>
-        <mat-checkbox class="width-100">Document 4</mat-checkbox>
-      </mat-expansion-panel>      
+        <li *ngFor="let document of documents">
+            <mat-checkbox [checked]="document.exists" [disabled]="document.exists"> 
+                {{document.name}}
+                <span *ngIf="document.exists">
+                    ✓
+                </span>
+                <span *ngIf="!document.exists">
+                    <input type="file" class="file-upload" onchange="console.log(event.target.files)">
+                    
+                </span>
+                <label class="custom-file-upload" *ngIf="!document.exists">
+                    <input type ="file"/>
+                    Upload
+                </label>
+                <span>
 
+                </span>
+            </mat-checkbox>
+        </li>
+      </mat-expansion-panel>      
     </mat-expansion-panel>
 
 
@@ -45,6 +59,13 @@
         <mat-panel-title> Istoric cereri </mat-panel-title>
       </mat-expansion-panel-header>
       <p>Content istoric cereri</p>
+      <div *ngFor="let cerere of cereri">
+        <mat-card>
+            {{cerere.name}}
+        </mat-card>
+        
+      </div>
+      
     </mat-expansion-panel>
   </mat-accordion>
 </div>
