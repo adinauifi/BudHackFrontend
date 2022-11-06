@@ -16,6 +16,8 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { CerereDetailsComponent } from './components/cereri/cerere-details/cerere-details.component';
 import {MatCardModule} from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -36,7 +38,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatSelectModule,
     MatCheckboxModule,
     MatCardModule, 
-    MatFormFieldModule
+    MatFormFieldModule,
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]

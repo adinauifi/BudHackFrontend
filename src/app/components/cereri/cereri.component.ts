@@ -27,10 +27,10 @@ export class CereriComponent implements OnInit {
         {value: 'cerere-3', viewValue: 'Cerere 3'},
     ];
     cereri: Cerere[] = [
-        {id: 1, requestorId: 1, type: 1, documents: [], dateCreated: new Date(), status: 1, name: 'Cerere 1'},
-        {id: 1, requestorId: 1, type: 1, documents: [], dateCreated: new Date(), status: 2, name: 'Cerere 2'},
-        {id: 1, requestorId: 1, type: 1, documents: [], dateCreated: new Date(), status: 3, name: 'Cerere 3'},
-        {id: 1, requestorId: 1, type: 1, documents: [], dateCreated: new Date(), status: 4, name: 'Cerere 4'},
+        {id: 1, requestorId: 1, type: 1, documents: [], dateCreated: new Date(), status: 'In curs de procesare', name: 'Cerere 1'},
+        {id: 1, requestorId: 1, type: 1, documents: [], dateCreated: new Date(), status: 'In curs de procesare', name: 'Cerere 2'},
+        {id: 1, requestorId: 1, type: 1, documents: [], dateCreated: new Date(), status: 'Respinsa', name: 'Cerere 3'},
+        {id: 1, requestorId: 1, type: 1, documents: [], dateCreated: new Date(), status: 'Acceptata', name: 'Cerere 4'},
     ];
 
   constructor() { }
