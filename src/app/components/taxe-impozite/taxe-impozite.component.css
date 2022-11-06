@@ -1,0 +1,9 @@
+
+app-plata{
+    height:165px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+}

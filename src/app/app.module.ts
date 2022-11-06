@@ -16,6 +16,7 @@ import {MatCheckboxModule} from '@angular/material/checkbox';
 import { CerereDetailsComponent } from './components/cereri/cerere-details/cerere-details.component';
 import {MatCardModule} from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { PlataComponent } from './components/taxe-impozite/plata/plata.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     TaxeImpoziteComponent,
     HomePageComponent,
     CTPComponent,
-    CerereDetailsComponent
+    CerereDetailsComponent,
+    PlataComponent
   ],
   imports: [
     BrowserModule,
@@ -36,8 +38,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatSelectModule,
     MatCheckboxModule,
     MatCardModule, 
-    MatFormFieldModule
+    MatFormFieldModule,
   ],
+  exports:[MatFormFieldModule],
   providers: [],
   bootstrap: [AppComponent]
 })
