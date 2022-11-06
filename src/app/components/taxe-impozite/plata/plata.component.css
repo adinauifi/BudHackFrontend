@@ -1,0 +1,24 @@
+.container{
+    padding:10px;
+    margin:10px;
+    background-color: aliceblue;
+}
+
+.titlu{
+    font-size: x-large;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.butoane{
+    display: flex;
+    justify-content: space-between;
+    margin-top:10px;
+}
+
+.button-plateste{
+    padding: 10px;
+    background-color: lightgreen;
+    font-size: large;
+    border-radius: 10px;
+}

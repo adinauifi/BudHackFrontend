@@ -26,6 +26,7 @@
     "@fortawesome/free-regular-svg-icons": "^6.1.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "angular": "^1.8.3",
+    "plata": "0.0.34",
     "angular-fontawesome": "^1.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
