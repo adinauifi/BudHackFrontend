@@ -6,6 +6,6 @@ export interface Cerere {
     type: number;
     documents: DocumentDTO[];
     dateCreated: Date;
-    status: number;
+    status: string;
     name: string;
   }

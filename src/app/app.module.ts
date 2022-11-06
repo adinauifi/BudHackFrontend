@@ -17,6 +17,8 @@ import { CerereDetailsComponent } from './components/cereri/cerere-details/cerer
 import {MatCardModule} from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { PlataComponent } from './components/taxe-impozite/plata/plata.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 
 @NgModule({
   declarations: [
@@ -39,6 +41,7 @@ import { PlataComponent } from './components/taxe-impozite/plata/plata.component
     MatCheckboxModule,
     MatCardModule, 
     MatFormFieldModule,
+    FontAwesomeModule
   ],
   exports:[MatFormFieldModule],
   providers: [],

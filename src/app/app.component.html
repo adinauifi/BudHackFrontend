@@ -25,11 +25,21 @@
 
 <!-- Toolbar -->
 <div class="app-toolbar">
-    <div class="toolbar-button" routerLink="/HomePage">HP</div>
-    <div class="toolbar-button" routerLink="/TaxeSiImpozite">TsI</div>
-    <div class="toolbar-button" routerLink="/Cereri">C</div>
-    <div class="toolbar-button" routerLink="/CTP">CTP</div>
-    <div class="toolbar-button" routerLink="/Profile">P</div>
+    <div class="toolbar-button" routerLink="/HomePage">
+        <fa-icon [icon]="faHouse"></fa-icon>
+    </div>
+    <div class="toolbar-button" routerLink="/TaxeSiImpozite">
+        <fa-icon [icon]="faMoneyBill"></fa-icon>
+    </div>
+    <div class="toolbar-button" routerLink="/Cereri">
+        <fa-icon [icon]="faFile"></fa-icon>
+    </div>
+    <div class="toolbar-button" routerLink="/CTP">
+        <fa-icon [icon]="faBus"></fa-icon>
+    </div>
+    <div class="toolbar-button" routerLink="/Profile">
+        <fa-icon [icon]="faUser"></fa-icon>
+    </div>
 </div>
 
 
