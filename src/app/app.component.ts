@@ -4,6 +4,7 @@ import { faFile } from '@fortawesome/free-regular-svg-icons';
 import { faMoneyBill1 } from '@fortawesome/free-regular-svg-icons';
 import { faBus } from '@fortawesome/free-solid-svg-icons';
 import { faHouse } from '@fortawesome/free-solid-svg-icons';
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 
 
 @Component({
@@ -18,5 +19,6 @@ export class AppComponent {
   faMoneyBill = faMoneyBill1;
   faBus = faBus;
   faHouse = faHouse;  
+  faAngleLeft = faAngleLeft;
 
 }
