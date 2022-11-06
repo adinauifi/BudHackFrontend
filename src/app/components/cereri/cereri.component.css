@@ -16,3 +16,7 @@ input[type="file"] {
 h1 {
     padding-top: 10px;
 }
+
+label{
+    font-size:large;
+}
