@@ -26,14 +26,15 @@
   }
 
   .toolbar {
-    position: absolute;
+    position: fixed;
+    z-index: 1000;
     top: 0;
     left: 0;
     right: 0;
     height: 50px;
     padding-top: 2%;
     align-items: center;
-    background-color: #1976d2;
+    background-color: yellowgreen;
     color: white;
     font-weight: 600;
   }
@@ -322,4 +323,8 @@
 
   .app-title {
     font-size: 3em;
+  }
+
+  .body {
+    background-color: white;
   }

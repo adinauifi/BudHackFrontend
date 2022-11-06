@@ -48,18 +48,22 @@
         </mat-form-field>
     </mat-expansion-panel>
     <mat-expansion-panel>
-        <mat-expansion-panel-header>
+        <mat-expansion-panel-header class="bold">
             Documentele mele
         </mat-expansion-panel-header>
+        <label>Act identitate</label>
         <div class="profil-document" (click)="openFile('help.pdf')">
-            Copie dupa carte de identitate
+            Copie dupa carte de identitate.pdf
         </div>
+        <label>Certificat nastere</label>
         <div class="profil-document" (click)="openFile('help.pdf')">
-            Copie dupa certificat de nastere
+            Copie dupa certificat de nastere.pdf
         </div>
+        <label>Certificat de casatorie</label>
         <div class="profil-document" (click)="openFile('help.pdf')">
-            Copie dupa starea civila
+            Copie dupa starea civila.pdf
         </div>
+        <label>Alte documente</label>
         <div class="profil-document" (click)="browseFile()">
             + ADAUGA
         </div>

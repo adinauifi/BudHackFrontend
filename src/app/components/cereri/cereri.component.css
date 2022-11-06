@@ -16,3 +16,12 @@ input[type="file"] {
 h1 {
     padding-top: 10px;
 }
+
+.button-trimite{
+    padding: 10px;
+    background-color: green;
+    font-size: large;
+    border-radius: 10px;
+    text-align: center;
+}
+

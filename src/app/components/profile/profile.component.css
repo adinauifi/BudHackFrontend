@@ -31,3 +31,7 @@ img{
 ::ng-host mat-label{
     color:white;
 }
+
+.bold {
+    font-weight: bold;
+}

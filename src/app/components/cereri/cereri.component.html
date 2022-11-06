@@ -1,6 +1,9 @@
 <br />
 <br />
 <br />
+<br />
+<br />
+<br />
 <div>
   <mat-accordion>
     <mat-expansion-panel hideToggle>
@@ -14,9 +17,11 @@
         </mat-expansion-panel-header>
       </mat-expansion-panel>
 
+      <br>
+
       <mat-form-field appearance="fill">
         <mat-label>Alege cererea pe care vrei sa o depui</mat-label>
-        <mat-select>
+        <mat-select (selectionChange)="selectionChanged($event)">
           <mat-option *ngFor="let cerere of cereriCategorii" [value]="cerere.value">
             {{cerere.viewValue}}
           </mat-option>
@@ -29,7 +34,10 @@
         </mat-expansion-panel-header>
 
         <li *ngFor="let document of documents">
-            <mat-checkbox [checked]="document.exists" [disabled]="document.exists"> 
+            <mat-checkbox [checked]="document.exists" 
+                            [disabled]="document.exists" 
+                            (change)="consoleLog($event, document.name)"
+                            [required]> 
                 {{document.name}}
                 <span *ngIf="document.exists">
                     ✓
@@ -44,6 +52,10 @@
             </mat-checkbox>
         </li>
       </mat-expansion-panel>      
+      <br>
+      <button class="button-trimite" type="submit" [disabled]="validateSendButton()">
+        Trimite
+      </button>
     </mat-expansion-panel>
 
 
