@@ -1,0 +1,24 @@
+.container{
+    padding:10px;
+    border-radius:10px;
+    border:1px solid black;
+    background-color: aliceblue;
+    display:flex;
+    align-items: center;
+    margin:10px;
+}
+
+.text{
+    width:70%;
+    margin-left:10px;
+}
+
+.titlu{
+    margin:10px;
+    font-size:xx-large;
+}
+
+.container-titlu{
+    display: flex;
+    align-items: center;
+}

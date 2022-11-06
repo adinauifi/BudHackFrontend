@@ -7,3 +7,10 @@ app-plata{
     display: flex;
     flex-direction: column;
 }
+
+.subtitlu{
+    margin: 10px;
+    font-size: xx-large;
+    font-weight: 700;
+}
+

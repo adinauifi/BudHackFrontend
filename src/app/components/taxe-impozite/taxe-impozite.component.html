@@ -1,5 +1,17 @@
 <p>taxe-impozite works!</p>
-<div>Plati</div>
+<br/>
+<br/>
+<br/>
+<div class="subtitlu">Plati curente</div>
 <div class="container">
     <app-plata *ngFor = "let plata of plati" [plataDetails]="plata"></app-plata>
 </div>
+<br/>
+<div class="subtitlu">Plati achitate</div>
+<div class="container">
+    <app-plata *ngFor = "let plata of platiAchitate" [plataDetails]="plata"></app-plata>
+</div>
+
+<br/>
+<br/>
+<br/>

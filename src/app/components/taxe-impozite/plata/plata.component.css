@@ -22,3 +22,10 @@
     font-size: large;
     border-radius: 10px;
 }
+
+.button-platit{
+    background-color: darkgray;
+    font-weight: 100;
+    padding: 10px;
+    border-radius: 10px;
+}

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PlataDetails, Plati } from './plata/plata-details';
+import { PlataDetails, Plati, PlatiPlatite } from './plata/plata-details';
 
 @Component({
   selector: 'app-taxe-impozite',
@@ -9,8 +9,11 @@ import { PlataDetails, Plati } from './plata/plata-details';
 export class TaxeImpoziteComponent implements OnInit {
 
   plati!: PlataDetails[];
+  platiAchitate!: PlataDetails[];
+
   constructor() { 
     this.plati = Plati;
+    this.platiAchitate = PlatiPlatite;
   }
 
   ngOnInit(): void {
